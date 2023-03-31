@@ -1,21 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>Create</class>
- <widget name="Create" class="QWidget">
+ <widget class="QWidget" name="Create">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>200</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>360</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>93</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="radioButton">
+      <property name="text">
+       <string>Chicken</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="text">
+       <string>Vegan Patty</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="text">
+       <string>Beef</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>113</width>
+     <height>164</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>Cheddar Cheese</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="text">
+       <string>Lettuce</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="text">
+       <string>Sweetcorn</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QCheckBox" name="checkBox_4">
+      <property name="text">
+       <string>Onions</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QCheckBox" name="checkBox_5">
+      <property name="text">
+       <string>Tomato</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QCheckBox" name="checkBox_6">
+      <property name="text">
+       <string>Olives</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>290</y>
+     <width>102</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QCheckBox" name="checkBox_7">
+      <property name="text">
+       <string>BBQ Sauce</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="checkBox_8">
+      <property name="text">
+       <string>Mayonnaise</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <pixmapfunction/>
+ <resources/>
  <connections/>
 </ui>

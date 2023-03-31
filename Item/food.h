@@ -3,7 +3,7 @@
 
 #include "item.h"
 
-class Food : public Item
+class Food : virtual public Item
 {
 private:
     QString storageDate;

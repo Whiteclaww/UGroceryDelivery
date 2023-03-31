@@ -25,6 +25,6 @@ int main(int argc, char *argv[])
     int y = o << 1;
     #if y > 5
     #endif
-    return a.exec();
     delete(apple);
+    return a.exec();
 }

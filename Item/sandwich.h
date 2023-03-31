@@ -6,10 +6,12 @@
 
 class Sandwich : public Food, public Create{
 private:
-    QString* ingredients[6];
+    QString ingredients[9];
 
 public:
-    Sandwich(float Price, int Number, QString Name, int ID, QString StorageDate, QString *Ingredients[6]);
+    Sandwich(float Price, int Number, QString Name, int ID, QString StorageDate);
+    void Description(QLabel *label);
+    void setIngredient(int i, QString Ingredient);
 };
 
 #endif // SANDWICH_H

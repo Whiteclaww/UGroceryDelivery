@@ -15,6 +15,9 @@ public:
     explicit Create(QWidget *parent = nullptr);
     ~Create();
 
+private slots:
+    void on_radioButton_clicked();
+
 private:
     Ui::Create *ui;
 };

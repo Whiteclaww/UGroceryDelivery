@@ -17,8 +17,8 @@ Item *User::Items(int i){
     return items[i];
 }
 
-int *User::Much(){
-    return much;
+int User::Much(int i){
+    return much[i];
 }
 
 User::User(QString First, QString Last){

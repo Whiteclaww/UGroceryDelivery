@@ -40,23 +40,23 @@ Item::~Item(){
     free(this);
 }
 
-bool Item::Buy(User user){
+bool Item::Buy(User *user){
     bool buy = 0;
     if (available){
-        user.bal -= price;
+        user->bal -= price;
         number--;
         if (number == 0) available = 0;
         buy = 1;
-        if (!user.items[id]) user.items[id] = this;
-        else user.items[id]->number--;
-        user.much[id]++;
+        if (!user->items[id]) user->items[id] = this;
+        else user->items[id]->number--;
+        user->much[id]++;
     } return buy;
 }
 
-bool Item::Remove(User user){
+bool Item::Remove(User *user){
     bool sell = 0;
-    if (user.Contains(id)){
-        user.bal += price;
+    if (user->Contains(id)){
+        user->bal += price;
         number++;
         if (number != 0) available = 1;
         sell = 1;

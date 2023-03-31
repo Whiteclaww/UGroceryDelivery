@@ -17,15 +17,15 @@ private:
 public:
     //overloading + between user and item to buy item
     friend bool operator+(User& user, Item& item);
-    friend bool Item::Buy(User user);
-    friend bool Item::Remove(User user);
+    friend bool Item::Buy(User *user);
+    friend bool Item::Remove(User *user);
 
     //getters
     QString Fname();
     QString Lname();
     int Bal();
     Item *Items(int i);
-    int *Much();
+    int Much(int i);
 
     //define
     User(QString First, QString Last);

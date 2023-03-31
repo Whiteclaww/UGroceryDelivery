@@ -3,8 +3,14 @@
 
 #include "item.h"
 
-class Create : public Item{
+class Create : virtual public Item{
+private:
+    QString items[9];
+    int total;
+
 public:
+    int Total();
+    QString Items(int);
     Create();
 };
 

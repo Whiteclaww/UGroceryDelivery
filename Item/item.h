@@ -29,8 +29,8 @@ public:
     Item(float Price = 0, int Number = 0, QString Name = 0, int ID = 0);
     ~Item();
     virtual void Description(QLabel *label) = 0;
-    bool Buy(User user);
-    bool Remove(User user);
+    bool Buy(User *user);
+    bool Remove(User *user);
 };
 
 #endif // ITEM_H
