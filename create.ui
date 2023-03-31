@@ -26,12 +26,12 @@
     <string>Save</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>40</x>
      <y>20</y>
-     <width>93</width>
+     <width>127</width>
      <height>80</height>
     </rect>
    </property>
@@ -46,7 +46,7 @@
     <item row="2" column="0">
      <widget class="QRadioButton" name="radioButton_3">
       <property name="text">
-       <string>Vegan Patty</string>
+       <string>Vegan Burger Patty</string>
       </property>
      </widget>
     </item>
@@ -59,7 +59,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -113,7 +113,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>40</x>

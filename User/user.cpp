@@ -42,5 +42,5 @@ User::User(QString First, QString Last, int Bal){
 }
 
 bool User::Contains(int ID){
-    return (items[ID]->Number() != 0);
+    return (much[ID] != 0);
 }

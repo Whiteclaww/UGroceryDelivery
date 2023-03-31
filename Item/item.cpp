@@ -37,7 +37,6 @@ Item::~Item(){
     number = 0;
     name = 0;
     id = 0;
-    free(this);
 }
 
 bool Item::Buy(User *user){
@@ -47,8 +46,6 @@ bool Item::Buy(User *user){
         number--;
         if (number == 0) available = 0;
         buy = 1;
-        if (!user->items[id]) user->items[id] = this;
-        else user->items[id]->number--;
         user->much[id]++;
     } return buy;
 }
@@ -60,5 +57,6 @@ bool Item::Remove(User *user){
         number++;
         if (number != 0) available = 1;
         sell = 1;
+        user->much[id]--;
     } return sell;
 }

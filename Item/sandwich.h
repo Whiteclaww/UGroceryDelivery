@@ -4,14 +4,12 @@
 #include "food.h"
 #include "create.h"
 
-class Sandwich : public Food, public Create{
-private:
-    QString ingredients[9];
+class Sandwich : public Food, public ItemCreate{
 
 public:
     Sandwich(float Price, int Number, QString Name, int ID, QString StorageDate);
     void Description(QLabel *label);
-    void setIngredient(int i, QString Ingredient);
+    void setPrice(float i);
 };
 
 #endif // SANDWICH_H
