@@ -29,8 +29,8 @@ set(PROJECT_SOURCES
         Item/sandwich.h
         Item/food.cpp
         Item/food.h
-        Item/create.cpp
-        Item/create.h
+        Item/itemcreate.cpp
+        Item/itemcreate.h
         Item/housekeeping.cpp
         Item/housekeeping.h
         User/user.cpp
