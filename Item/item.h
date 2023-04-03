@@ -4,10 +4,14 @@
 #include <QLabel>
 #include <QString>
 
-template<class T>
-bool Buy();
-
 class User;
+
+class NotValidItem : public std::exception{
+public:
+    char *err(){
+        return "Invalid Item";
+    }
+};
 
 class Item{
 protected:

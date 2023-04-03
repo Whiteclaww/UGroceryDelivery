@@ -36,6 +36,9 @@ set(PROJECT_SOURCES
         User/user.cpp
         User/user.h
         list.h
+        menu.h
+        menu.cpp
+        menu.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

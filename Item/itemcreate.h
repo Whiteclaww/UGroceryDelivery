@@ -10,10 +10,10 @@ private:
 
 public:
     int Total();
-    QString Items(int);
     ItemCreate();
     void setIngredient(int i, QString Ingredient);
     QString getItem(int i);
+    void DCopy(ItemCreate *i);
 };
 
 #endif // CREATE_H

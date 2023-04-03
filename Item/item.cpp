@@ -41,7 +41,7 @@ Item::~Item(){
 
 bool Item::Buy(User *user){
     bool buy = 0;
-    if (available){
+    if (available && user->Bal() > price){
         user->bal -= price;
         number--;
         if (number == 0) available = 0;

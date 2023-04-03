@@ -10,7 +10,7 @@ class User{
 private:
     QString fname;
     QString lname;
-    int bal;
+    float bal;
     Item *items[100];
     int much[100];
 
@@ -23,14 +23,19 @@ public:
     //getters
     QString Fname();
     QString Lname();
-    int Bal();
+    float Bal();
+    void setBal(float i);
     Item *Items(int i);
     int Much(int i);
+    void setF(QString);
+    void setL(QString);
 
     //define
     User(QString First, QString Last);
-    User(QString First, QString Last, int Bal);
+    User(QString First, QString Last, float Bal);
     bool Contains(int ID);
+
+    static User *u;
 };
 
 #endif // USER_H

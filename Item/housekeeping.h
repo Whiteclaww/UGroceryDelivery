@@ -5,8 +5,11 @@
 
 class Housekeeping : public Item
 {
+private:
+    bool safe;
 public:
-    Housekeeping();
+    Housekeeping(float Price, int Number, QString Name, int ID, bool Safe);
+    void Description(QLabel *label);
 };
 
 #endif // HOUSEKEEPING_H

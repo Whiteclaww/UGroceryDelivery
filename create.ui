@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>200</width>
-    <height>400</height>
+    <width>900</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>360</y>
+     <x>770</x>
+     <y>450</y>
      <width>80</width>
      <height>24</height>
     </rect>
@@ -29,13 +29,20 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>20</y>
+     <x>750</x>
+     <y>60</y>
      <width>127</width>
      <height>80</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="text">
+       <string>Beef</string>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="QRadioButton" name="radioButton">
       <property name="text">
@@ -50,25 +57,32 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QRadioButton" name="radioButton_2">
-      <property name="text">
-       <string>Beef</string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>110</y>
+     <x>750</x>
+     <y>160</y>
      <width>113</width>
-     <height>164</height>
+     <height>186</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
+    <item row="4" column="0">
+     <widget class="QCheckBox" name="checkBox_5">
+      <property name="text">
+       <string>Tomato</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QCheckBox" name="checkBox_4">
+      <property name="text">
+       <string>Onions</string>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="QCheckBox" name="checkBox">
       <property name="text">
@@ -83,31 +97,17 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QCheckBox" name="checkBox_3">
-      <property name="text">
-       <string>Sweetcorn</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QCheckBox" name="checkBox_4">
-      <property name="text">
-       <string>Onions</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QCheckBox" name="checkBox_5">
-      <property name="text">
-       <string>Tomato</string>
-      </property>
-     </widget>
-    </item>
     <item row="5" column="0">
      <widget class="QCheckBox" name="checkBox_6">
       <property name="text">
        <string>Olives</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="text">
+       <string>Sweetcorn</string>
       </property>
      </widget>
     </item>
@@ -116,8 +116,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>290</y>
+     <x>750</x>
+     <y>380</y>
      <width>102</width>
      <height>52</height>
     </rect>
@@ -138,6 +138,45 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>45</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Main Ingredient:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>150</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sides:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>360</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sauces:</string>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -6,11 +6,15 @@ QString User::Fname(){
 }
 
 QString User::Lname(){
-    return fname;
+    return lname;
 }
 
-int User::Bal(){
+float User::Bal(){
     return bal;
+}
+
+void User::setBal(float i){
+    bal += i;
 }
 
 Item *User::Items(int i){
@@ -19,6 +23,14 @@ Item *User::Items(int i){
 
 int User::Much(int i){
     return much[i];
+}
+
+void User::setF(QString n){
+    fname = n;
+}
+
+void User::setL(QString n){
+    lname = n;
 }
 
 User::User(QString First, QString Last){
@@ -31,7 +43,7 @@ User::User(QString First, QString Last){
     }
 }
 
-User::User(QString First, QString Last, int Bal){
+User::User(QString First, QString Last, float Bal){
     fname = First;
     lname = Last;
     bal = Bal;
@@ -44,3 +56,5 @@ User::User(QString First, QString Last, int Bal){
 bool User::Contains(int ID){
     return (much[ID] != 0);
 }
+
+User *User::u = new User("Marine", "Collet", 99);

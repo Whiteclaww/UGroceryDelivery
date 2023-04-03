@@ -12,6 +12,6 @@ QString Food::StorageDate(){
 void Food::Description(QLabel *label){
     label->setText("Item: " + name + "\n"
                    "Available: " + QString::number(number) + "\n"
-                   "Price: " + QString::number(price) + "\n"
+                   "Price: " + QString::number(price) + "€\n"
                    "Consume within: " + storageDate);
 }
